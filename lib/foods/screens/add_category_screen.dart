@@ -58,7 +58,8 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> {
     await internetProvider.checkInternetConnection();
     if (internetProvider.hasInternet == false) {
       Navigator.pop(context);
-      openSnackbar(context, 'Check your internet connection', scheme.primary);
+      openSnackbar(context, 'Check your internet connection',
+          Color.fromARGB(255, 16, 2, 214));
     } else {
       await foodController.addNewCategory(
         title: titleController.text.trim().toString(),

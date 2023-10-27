@@ -65,7 +65,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
       controller: widget.controller,
       decoration: InputDecoration(
         errorText: widget.errorText == '' ? null : widget.errorText,
-        suffixIconColor: scheme.primary,
+        suffixIconColor: Color.fromARGB(255, 16, 2, 214),
         suffixIcon: widget.noIcon
             ? const SizedBox()
             : IconButton(

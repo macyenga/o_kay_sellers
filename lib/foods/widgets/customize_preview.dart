@@ -32,8 +32,9 @@ class _CustomizePreviewState extends State<CustomizePreview> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color:
-            widget.isRequired ? scheme.primary.withOpacity(0.05) : Colors.white,
+        color: widget.isRequired
+            ? Color.fromARGB(255, 16, 2, 214).withOpacity(0.05)
+            : Colors.white,
         border: Border.all(
             color: widget.isRequired ? Colors.grey[300]! : Colors.transparent),
         borderRadius: BorderRadius.circular(10),
@@ -60,7 +61,7 @@ class _CustomizePreviewState extends State<CustomizePreview> {
                 widget.isRequired
                     ? TextTag(
                         text: 'Required',
-                        backgroundColor: scheme.primary,
+                        backgroundColor: Color.fromARGB(255, 16, 2, 214),
                         textColor: Colors.white,
                       )
                     : TextTag(
@@ -77,7 +78,9 @@ class _CustomizePreviewState extends State<CustomizePreview> {
                   : 'Select ${widget.selectAmount}',
               style: TextStyle(
                 fontSize: 14,
-                color: widget.isRequired ? scheme.primary : Colors.grey[500],
+                color: widget.isRequired
+                    ? Color.fromARGB(255, 16, 2, 214)
+                    : Colors.grey[500],
                 fontWeight: FontWeight.w700,
               ),
             ),
@@ -91,7 +94,7 @@ class _CustomizePreviewState extends State<CustomizePreview> {
                     ? ListTile(
                         title: Text(widget.listChoiceText[index]),
                         leading: Radio(
-                          activeColor: scheme.primary,
+                          activeColor: Color.fromARGB(255, 16, 2, 214),
                           value: index,
                           groupValue: _value,
                           onChanged: (value) {
@@ -111,7 +114,7 @@ class _CustomizePreviewState extends State<CustomizePreview> {
                     : ListTile(
                         title: Text(widget.listChoiceText[index]),
                         leading: Checkbox(
-                          activeColor: scheme.primary,
+                          activeColor: Color.fromARGB(255, 16, 2, 214),
                           value: isSelected,
                           onChanged: (bool? value) {
                             setState(() {

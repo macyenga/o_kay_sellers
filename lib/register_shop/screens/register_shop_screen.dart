@@ -69,7 +69,8 @@ class _RegisterShopScreenState extends State<RegisterShopScreen> {
     await internetProvider.checkInternetConnection();
     if (internetProvider.hasInternet == false) {
       Navigator.pop(context);
-      openSnackbar(context, 'Check your internet connection', scheme.primary);
+      openSnackbar(context, 'Check your internet connection',
+          Color.fromARGB(255, 16, 2, 214));
     } else {
       if (imageUrl.isNotEmpty) {
         await registerShopProvider.registerShop(
@@ -254,7 +255,7 @@ class _RegisterShopScreenState extends State<RegisterShopScreen> {
                               child: Column(
                                 children: [
                                   Image.asset(
-                                    'assets/images/foodpanda_location.png',
+                                    'assets/images/kay/shoplocal.png',
                                     width: 100,
                                   ),
                                   const Text(

@@ -39,7 +39,8 @@ class _SendVerificationEmailScreenState
     await internetProvider.checkInternetConnection();
     if (internetProvider.hasInternet == false) {
       Navigator.pop(context);
-      openSnackbar(context, 'Check your internet connection', scheme.primary);
+      openSnackbar(context, 'Check your internet connection',
+          Color.fromARGB(255, 16, 2, 214));
     } else {
       setState(() {
         alreadySent = true;
@@ -90,7 +91,7 @@ class _SendVerificationEmailScreenState
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        foregroundColor: scheme.primary,
+        foregroundColor: Color.fromARGB(255, 16, 2, 214),
       ),
       body: Padding(
         padding: const EdgeInsets.all(15),

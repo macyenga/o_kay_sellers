@@ -49,7 +49,7 @@ class ChoicePrice extends StatelessWidget {
           onPressed: onDelete,
           icon: Icon(
             Icons.delete_outline,
-            color: scheme.primary,
+            color: Color.fromARGB(255, 16, 2, 214),
           ),
         )
       ],

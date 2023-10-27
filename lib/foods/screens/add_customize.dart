@@ -55,7 +55,7 @@ class _AddCustomizationScreenState extends State<AddCustomizationScreen> {
     for (int i = 0; i < listChoiceController.length; i++) {
       if (listChoiceController[i].text.isEmpty) {
         openSnackbar(context, 'Please fill in the empty field or remove it.',
-            scheme.primary);
+            Color.fromARGB(255, 16, 2, 214));
         return;
       }
       Choice choice = Choice(
@@ -144,7 +144,7 @@ class _AddCustomizationScreenState extends State<AddCustomizationScreen> {
                         ),
                         Switch(
                           value: isVariation,
-                          activeColor: scheme.primary,
+                          activeColor: Color.fromARGB(255, 16, 2, 214),
                           onChanged: (value) {
                             setState(() {
                               isVariation = value;
@@ -196,7 +196,7 @@ class _AddCustomizationScreenState extends State<AddCustomizationScreen> {
                           children: [
                             Switch(
                               value: isRequired,
-                              activeColor: scheme.primary,
+                              activeColor: Color.fromARGB(255, 16, 2, 214),
                               onChanged: (value) {
                                 setState(() {
                                   isRequired = value;
@@ -234,7 +234,7 @@ class _AddCustomizationScreenState extends State<AddCustomizationScreen> {
                           },
                           icon: Icon(
                             Icons.add,
-                            color: scheme.primary,
+                            color: Color.fromARGB(255, 16, 2, 214),
                           ),
                         )
                       ],
@@ -292,7 +292,7 @@ class _AddCustomizationScreenState extends State<AddCustomizationScreen> {
                             ),
                             Switch(
                               value: isRadio,
-                              activeColor: scheme.primary,
+                              activeColor: Color.fromARGB(255, 16, 2, 214),
                               onChanged: (value) {
                                 setState(() {
                                   isRadio = value;

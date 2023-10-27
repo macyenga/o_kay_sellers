@@ -62,7 +62,7 @@ class _FoodCardState extends State<FoodCard> {
       dialogSubtitle: 'Are you sure to delete this food item?',
       children: InkWell(
         onTap: widget.onTap,
-        splashColor: scheme.primary.withOpacity(0.2),
+        splashColor: Color.fromARGB(255, 16, 2, 214).withOpacity(0.2),
         child: Stack(
           children: [
             Padding(
@@ -118,7 +118,8 @@ class _FoodCardState extends State<FoodCard> {
                                     children: [
                                       Switch(
                                         value: widget.isPublished!,
-                                        activeColor: scheme.primary,
+                                        activeColor:
+                                            Color.fromARGB(255, 16, 2, 214),
                                         onChanged: (value) {
                                           setState(() {
                                             widget.isPublished = value;
@@ -144,7 +145,7 @@ class _FoodCardState extends State<FoodCard> {
                         height: 100,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: scheme.primary,
+                          color: Color.fromARGB(255, 16, 2, 214),
                           image: DecorationImage(
                             image: widget.imageFile == null
                                 ? NetworkImage(
@@ -169,7 +170,7 @@ class _FoodCardState extends State<FoodCard> {
                   Icons.add,
                   color: Colors.white,
                 ),
-                backgroundColor: scheme.primary,
+                backgroundColor: Color.fromARGB(255, 16, 2, 214),
                 onPressed: () {
                   if (widget.id != null && widget.categoryId != null) {
                     Navigator.pushNamed(

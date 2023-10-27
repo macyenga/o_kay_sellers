@@ -136,7 +136,7 @@ class _SearchAddressManualScreenState extends State<SearchAddressManualScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        foregroundColor: scheme.primary,
+        foregroundColor: Color.fromARGB(255, 16, 2, 214),
         elevation: 0.5,
         title: Container(
           alignment: Alignment.center,
@@ -208,7 +208,7 @@ class _SearchAddressManualScreenState extends State<SearchAddressManualScreen> {
                     onTap: getLocation,
                     child: Icon(
                       Icons.gps_fixed_outlined,
-                      color: scheme.primary,
+                      color: Color.fromARGB(255, 16, 2, 214),
                       size: 20,
                     ),
                   ),
@@ -246,7 +246,7 @@ class _SearchAddressManualScreenState extends State<SearchAddressManualScreen> {
           Center(
             child: Icon(
               Icons.location_on_rounded,
-              color: scheme.primary,
+              color: Color.fromARGB(255, 16, 2, 214),
               size: 40,
             ),
           ),

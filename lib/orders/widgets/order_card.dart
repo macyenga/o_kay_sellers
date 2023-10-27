@@ -45,7 +45,7 @@ class OrderCard extends StatelessWidget {
             children: [
               Icon(
                 Icons.receipt_long_outlined,
-                color: scheme.primary,
+                color: Color.fromARGB(255, 16, 2, 214),
               ),
               const SizedBox(width: 15),
               Expanded(
@@ -59,7 +59,7 @@ class OrderCard extends StatelessWidget {
                             'Order #${order.id}',
                             style: TextStyle(
                               fontSize: isHistoryOrder! ? 13 : 16,
-                              color: scheme.primary,
+                              color: Color.fromARGB(255, 16, 2, 214),
                               fontWeight: FontWeight.w600,
                             ),
                           ),
@@ -73,12 +73,12 @@ class OrderCard extends StatelessWidget {
                                         ? 'Complete'
                                         : 'Progress',
                                 backgroundColor: order.isDelivered
-                                    ? scheme.primary
+                                    ? Color.fromARGB(255, 16, 2, 214)
                                     : Colors.white,
                                 textColor: order.isDelivered
                                     ? Colors.white
-                                    : scheme.primary,
-                                borderColor: scheme.primary,
+                                    : Color.fromARGB(255, 16, 2, 214),
+                                borderColor: Color.fromARGB(255, 16, 2, 214),
                               )
                             : const SizedBox()
                       ],
@@ -134,7 +134,7 @@ class OrderCard extends StatelessWidget {
                 },
                 child: Icon(
                   Icons.call_outlined,
-                  color: scheme.primary,
+                  color: Color.fromARGB(255, 16, 2, 214),
                 ),
               ),
             ],

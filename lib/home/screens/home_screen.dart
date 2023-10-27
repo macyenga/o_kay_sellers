@@ -26,9 +26,9 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        foregroundColor: scheme.primary,
+        foregroundColor: Color.fromARGB(255, 16, 2, 214),
         title: const Text(
-          'FoodPanda Seller',
+          'Kay Seller',
           style: TextStyle(
             fontSize: 16,
           ),
@@ -161,7 +161,7 @@ class HomeScreen extends StatelessWidget {
   }) {
     return Expanded(
       child: InkWell(
-        splashColor: scheme.primary.withOpacity(0.2),
+        splashColor: Color.fromARGB(255, 16, 2, 214).withOpacity(0.2),
         onTap: onTap,
         child: Ink(
           height: height * 0.17,
@@ -179,7 +179,7 @@ class HomeScreen extends StatelessWidget {
                         top: 20,
                         right: 0,
                         child: CircleAvatar(
-                          backgroundColor: scheme.primary,
+                          backgroundColor: Color.fromARGB(255, 16, 2, 214),
                           radius: 13,
                           child: Text(
                             alert.toString(),
@@ -198,7 +198,7 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     Icon(
                       iconData,
-                      color: scheme.primary,
+                      color: Color.fromARGB(255, 16, 2, 214),
                       size: 40,
                     ),
                     const SizedBox(height: 10),

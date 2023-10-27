@@ -123,7 +123,7 @@ class _MenuScreenState extends State<MenuScreen> {
                         title: '', subtitle: '', id: ''),
                   );
                 },
-                splashColor: scheme.primary.withOpacity(1),
+                splashColor: Color.fromARGB(255, 16, 2, 214).withOpacity(1),
                 child: Ink(
                   width: double.infinity,
                   height: 100,
@@ -131,12 +131,12 @@ class _MenuScreenState extends State<MenuScreen> {
                     color: Colors.grey[300],
                     borderRadius: BorderRadius.circular(15),
                     border: Border.all(
-                      color: scheme.primary.withOpacity(0.5),
+                      color: Color.fromARGB(255, 16, 2, 214).withOpacity(0.5),
                     ),
                   ),
                   child: Icon(
                     Icons.add,
-                    color: scheme.primary,
+                    color: Color.fromARGB(255, 16, 2, 214),
                     size: 50,
                   ),
                 ),

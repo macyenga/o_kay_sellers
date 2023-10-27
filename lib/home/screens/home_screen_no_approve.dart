@@ -10,9 +10,9 @@ class HomeScreenNoApprove extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        foregroundColor: scheme.primary,
+        foregroundColor: Color.fromARGB(255, 16, 2, 214),
         title: const Text(
-          'FoodPanda Seller',
+          'Kay Seller',
           style: TextStyle(
             fontSize: 16,
           ),
@@ -35,12 +35,12 @@ class HomeScreenNoApprove extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               Text(
-                'hovvathana1@gmail.com',
+                'nowdidier@gmail.com',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   fontSize: 18,
-                  color: scheme.primary,
+                  color: Color.fromARGB(255, 16, 2, 214),
                 ),
               ),
             ],

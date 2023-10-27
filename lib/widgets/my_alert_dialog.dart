@@ -62,10 +62,10 @@ class MyAlertDialog extends StatelessWidget {
                       Navigator.pop(context);
                     },
                     style: ElevatedButton.styleFrom(
-                      foregroundColor: scheme.primary,
+                      foregroundColor: Color.fromARGB(255, 16, 2, 214),
                       side: BorderSide(
                         width: 1,
-                        color: scheme.primary,
+                        color: Color.fromARGB(255, 16, 2, 214),
                       ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
@@ -89,7 +89,7 @@ class MyAlertDialog extends StatelessWidget {
                   child: TextButton(
                     onPressed: action2Func,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: scheme.primary,
+                      backgroundColor: Color.fromARGB(255, 16, 2, 214),
                       foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),

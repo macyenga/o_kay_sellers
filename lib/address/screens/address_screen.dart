@@ -79,7 +79,8 @@ class AddressScreenState extends State<AddressScreen> {
                                           children: [
                                             Icon(
                                               Icons.location_on_outlined,
-                                              color: scheme.primary,
+                                              color: Color.fromARGB(
+                                                  255, 16, 2, 214),
                                               size: 30,
                                             ),
                                             const SizedBox(width: 20),
@@ -101,7 +102,8 @@ class AddressScreenState extends State<AddressScreen> {
                                         ),
                                         Icon(
                                           Icons.edit_outlined,
-                                          color: scheme.primary,
+                                          color:
+                                              Color.fromARGB(255, 16, 2, 214),
                                           size: 30,
                                         ),
                                       ],

@@ -33,7 +33,7 @@ class _ViewDetailState extends State<ViewDetail> {
                 Text(
                   'View details',
                   style: TextStyle(
-                    color: scheme.primary,
+                    color: Color.fromARGB(255, 16, 2, 214),
                     fontWeight: FontWeight.w600,
                     fontSize: 16,
                   ),
@@ -53,7 +53,7 @@ class _ViewDetailState extends State<ViewDetail> {
                   isViewDetail
                       ? Icons.keyboard_arrow_up_sharp
                       : Icons.keyboard_arrow_down_sharp,
-                  color: scheme.primary,
+                  color: Color.fromARGB(255, 16, 2, 214),
                   size: 30,
                 )
               ],

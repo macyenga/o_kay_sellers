@@ -24,8 +24,8 @@ class MyDrawer extends StatelessWidget {
           Builder(builder: (c) {
             return DrawerHeader(
                 decoration: BoxDecoration(
-                  color: scheme.primary,
-                  border: Border.all(color: scheme.primary),
+                  color: Color.fromARGB(255, 16, 2, 214),
+                  border: Border.all(color: Color.fromARGB(255, 16, 2, 214)),
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -41,7 +41,7 @@ class MyDrawer extends StatelessWidget {
                         child: Text(
                           ap.name!.isNotEmpty ? ap.name!.substring(0, 1) : 'F',
                           style: TextStyle(
-                            color: scheme.primary,
+                            color: Color.fromARGB(255, 16, 2, 214),
                             fontSize: 30,
                             fontWeight: FontWeight.w700,
                           ),
@@ -54,7 +54,7 @@ class MyDrawer extends StatelessWidget {
                             context, RegisterShopScreen.routeName);
                       },
                       child: Text(
-                        ap.name!.isNotEmpty ? ap.name! : 'Foodpanda',
+                        ap.name!.isNotEmpty ? ap.name! : 'Kay',
                         style: const TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w700,
@@ -164,7 +164,7 @@ class MyDrawer extends StatelessWidget {
             ),
             leading: Icon(
               icon,
-              color: scheme.primary,
+              color: Color.fromARGB(255, 16, 2, 214),
             ),
             onTap: onTap,
           );

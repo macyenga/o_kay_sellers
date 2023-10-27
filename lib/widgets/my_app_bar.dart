@@ -22,7 +22,7 @@ class MyAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverAppBar(
       foregroundColor: foregroundColor ?? Colors.white,
-      backgroundColor: backgroundColor ?? scheme.primary,
+      backgroundColor: backgroundColor ?? Color.fromARGB(255, 16, 2, 214),
       expandedHeight: 110,
       collapsedHeight: 60,
       forceElevated: true,
@@ -32,21 +32,27 @@ class MyAppBar extends StatelessWidget {
       pinned: true,
       leading: leadingIcon ??
           BackButton(
-            color: foregroundColor == null ? Colors.white : scheme.primary,
+            color: foregroundColor == null
+                ? Colors.white
+                : Color.fromARGB(255, 16, 2, 214),
           ),
       actions: [
         IconButton(
           onPressed: () {},
           icon: Icon(
             Icons.favorite_border_rounded,
-            color: foregroundColor == null ? Colors.white : scheme.primary,
+            color: foregroundColor == null
+                ? Colors.white
+                : Color.fromARGB(255, 16, 2, 214),
           ),
         ),
         IconButton(
           onPressed: () {},
           icon: Icon(
             Icons.shopping_bag_outlined,
-            color: foregroundColor == null ? Colors.white : scheme.primary,
+            color: foregroundColor == null
+                ? Colors.white
+                : Color.fromARGB(255, 16, 2, 214),
           ),
         )
       ],

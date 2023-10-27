@@ -26,10 +26,12 @@ class CustomTextButton extends StatelessWidget {
               ? Colors.grey[400]
               : isOutlined
                   ? Colors.transparent
-                  : scheme.primary,
+                  : Color.fromARGB(255, 16, 2, 214),
           borderRadius: BorderRadius.circular(5),
           border: Border.all(
-            color: isOutlined ? scheme.primary : Colors.transparent,
+            color: isOutlined
+                ? Color.fromARGB(255, 16, 2, 214)
+                : Colors.transparent,
             width: isOutlined ? 1 : 0,
           ),
         ),
@@ -37,7 +39,7 @@ class CustomTextButton extends StatelessWidget {
           text,
           textAlign: TextAlign.center,
           style: TextStyle(
-            color: isOutlined ? scheme.primary : Colors.white,
+            color: isOutlined ? Color.fromARGB(255, 16, 2, 214) : Colors.white,
           ),
         ),
       ),

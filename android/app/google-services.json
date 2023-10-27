@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "257443683914",
+    "project_id": "kaysdraff",
+    "storage_bucket": "kaysdraff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257443683914:android:0302ff6b8a4c26a36710b3",
+        "android_client_info": {
+          "package_name": "com.example.o_kay_admin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm-JSZZ69UmXQQ0e7fb5YYedWCNvd6vy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257443683914:android:dbc4a977d3c531d26710b3",
+        "android_client_info": {
+          "package_name": "com.example.o_kay_customer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm-JSZZ69UmXQQ0e7fb5YYedWCNvd6vy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257443683914:android:f7b68913d14c21496710b3",
+        "android_client_info": {
+          "package_name": "com.example.o_kay_sellers"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm-JSZZ69UmXQQ0e7fb5YYedWCNvd6vy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

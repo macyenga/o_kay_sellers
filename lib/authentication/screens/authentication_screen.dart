@@ -29,7 +29,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
               height: MediaQuery.of(context).size.height * 0.55,
               child: Center(
                 child: Image.asset(
-                  'assets/images/foodpanda_logo.png',
+                  'assets/images/kay/trakay.png',
                   width: 200,
                 ),
               ),
@@ -37,7 +37,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               child: Text(
-                'Elevated your business with us, FoodPanda.',
+                'Elevated your business with us, Kay.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontWeight: FontWeight.w700,
@@ -46,7 +46,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
               ),
             ),
             Text(
-              'Welcome to FoodPanda!',
+              'Welcome to Kay!',
               style: TextStyle(
                 color: Colors.grey[500]!,
                 fontWeight: FontWeight.w500,

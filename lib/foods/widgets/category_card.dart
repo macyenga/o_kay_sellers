@@ -49,7 +49,7 @@ class _CategoryCardState extends State<CategoryCard> {
           width: double.infinity,
           height: widget.isPublished != null ? 110 : 100,
           decoration: BoxDecoration(
-            color: scheme.primary,
+            color: Color.fromARGB(255, 16, 2, 214),
             borderRadius: BorderRadius.circular(15),
             border: Border.all(color: Colors.grey[300]!),
           ),

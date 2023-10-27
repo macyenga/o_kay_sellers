@@ -88,7 +88,8 @@ class _AddFoodScreenState extends State<AddFoodScreen> {
     await internetProvider.checkInternetConnection();
     if (internetProvider.hasInternet == false) {
       Navigator.pop(context);
-      openSnackbar(context, 'Check your internet connection', scheme.primary);
+      openSnackbar(context, 'Check your internet connection',
+          Color.fromARGB(255, 16, 2, 214));
     } else {
       await foodController.addNewFood(
         categoryId: widget.id,

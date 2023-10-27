@@ -73,7 +73,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
       await internetProvider.checkInternetConnection();
       if (internetProvider.hasInternet == false) {
         Navigator.pop(context);
-        openSnackbar(context, 'Check your internet connection', scheme.primary);
+        openSnackbar(context, 'Check your internet connection',
+            Color.fromARGB(255, 16, 2, 214));
       } else {
         await authenticationProvider
             .registerWithEmail(
@@ -86,7 +87,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             openSnackbar(
               context,
               authenticationProvider.errorCode,
-              scheme.primary,
+              Color.fromARGB(255, 16, 2, 214),
             );
             authenticationProvider.resetError();
           } else {
@@ -109,7 +110,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        foregroundColor: scheme.primary,
+        foregroundColor: Color.fromARGB(255, 16, 2, 214),
         actions: [
           TextButton(
             onPressed: firstNameText.isEmpty ||
@@ -125,7 +126,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         passwordText.isEmpty ||
                         emailText.isEmpty
                     ? Colors.grey[400]
-                    : scheme.primary,
+                    : Color.fromARGB(255, 16, 2, 214),
               ),
             ),
           )
